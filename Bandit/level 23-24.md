@@ -94,10 +94,12 @@ cd /var/spool/$myname/foo
 
 echo "Executing and deleting all scripts in /var/spool/$myname/foo:"
 
+
 for i in * .*;
 do
 
   if [ "$i" != "." -a "$i" != ".." ];
+  
   then
      echo "Handling $i"
      owner="$(stat --format "%U" ./$i)"
@@ -142,7 +144,7 @@ Create a temporary directory with secure permissions:
 
 
 
-# Output: /tmp/tmp.XXXXXXXXXX
+ Output: /tmp/tmp.XXXXXXXXXX
 
 
 
