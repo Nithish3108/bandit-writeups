@@ -169,7 +169,7 @@ Now that you're logged in as bandit14, you can read the password file:
 
 
 
-```bash cat /etc/bandit\_pass/bandit14 ```
+```bash cat /etc/bandit_pass/bandit14 ```
 
 
 
