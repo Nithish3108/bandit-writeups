@@ -52,7 +52,7 @@ Read the password for bandit14 from the password file:
 
 
 
-```bash cat /etc/bandit\_pass/bandit14 ```
+```bash cat /etc/bandit_pass/bandit14 ```
 
 
 
