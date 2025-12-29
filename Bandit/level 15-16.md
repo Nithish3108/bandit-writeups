@@ -47,7 +47,7 @@ Read the password for bandit15:
 
 
 
-```bash cat /etc/bandit\_pass/bandit15 ```
+```bash cat /etc/bandit_pass/bandit15 ```
 
 
 
