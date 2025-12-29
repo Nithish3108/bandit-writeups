@@ -62,7 +62,6 @@ You'll see:
 
 
 @reboot bandit24 /usr/bin/cronjob_bandit24.sh \&> /dev/null
-
 * * * * * bandit24 /usr/bin/cronjob_bandit24.sh \&> /dev/null
 
 
@@ -96,26 +95,18 @@ cd /var/spool/$myname/foo
 echo "Executing and deleting all scripts in /var/spool/$myname/foo:"
 
 for i in * .*;
-
 do
 
   if [ "$i" != "." -a "$i" != ".." ];
   then
-
-       echo "Handling $i"
-
-       owner="$(stat --format "%U" ./$i)"
-
-       if [ "${owner}" = "bandit23" ]; then
-
-       timeout -s 9 60 ./$i
-
-       fi
-
-       rm -f ./$i
-fi
-
-done
+     echo "Handling $i"
+     owner="$(stat --format "%U" ./$i)"
+     if [ "${owner}" = "bandit23" ]; then
+          timeout -s 9 60 ./$i
+     fi
+     rm -f ./$i
+  fi
+  done
 
 
 
