@@ -71,7 +71,7 @@ Since we need to find the human-readable file, use the file command to check all
 
 
 
-```bash file ./\* ```
+```bash file ./* ```
 
 
 
